@@ -3,9 +3,363 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elairich Bio Solutions</title>
+  <title>Elairich Bio Solutions | Organic Crop Care Products</title>
+  <meta name="description" content="Elairich Bio Solutions manufactures 100% organic liquid biological fungicides, insecticides and bio-fertilizers for sustainable agriculture, made in Kumily, Kerala.">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <h1>Elairich Bio Solutions</h1>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <img src="assets/logo/elairich_logo-512.png" alt="Elairich Bio Solutions logo" class="brand-logo">
+        <span class="brand-name">Elairich<strong>Bio Solutions</strong></span>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="eyebrow">For Agriculture Use Only &middot; 100% Organic</span>
+          <h1>Pure Protection for Your Crops</h1>
+          <p class="lead">Elairich Bio Solutions crafts liquid biological fungicides, insecticides and bio-fertilizers that defend your crops and enrich your soil &mdash; naturally, from Kumily, Kerala.</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Explore Products</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img class="tile-1" src="assets/contents/bottle-planto-care.jpeg" alt="Planto Care liquid biological fungicide bottle">
+          <img class="tile-2" src="assets/contents/bottle-thripsgo.jpeg" alt="Thripsgo liquid bio-insecticide bottle">
+          <img class="tile-3" src="assets/contents/bottle-stem-guard.jpeg" alt="Stem Guard liquid bio-insecticide bottle">
+          <img class="tile-4" src="assets/contents/bottle-root-guard.jpeg" alt="Root Guard liquid bio-insecticide bottle">
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="container">
+        <div class="feature">
+          <div class="feature-icon">🌱</div>
+          <h4>100% Organic</h4>
+          <p>Microbial formulations safe for crops, soil &amp; environment</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔬</div>
+          <h4>Lab Standardized</h4>
+          <p>Guaranteed CFU counts for consistent field performance</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🌾</div>
+          <h4>Soil to Harvest</h4>
+          <p>Pest control, disease management &amp; soil fertility, covered</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">📍</div>
+          <h4>Made in Kerala</h4>
+          <p>Proudly manufactured in Kumily, Idukki District</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container about-inner">
+        <div class="about-text">
+          <span class="section-tag">About Us</span>
+          <h2 class="section-title">Pure Protection, Naturally</h2>
+          <p>Elairich Bio Solutions develops and manufactures liquid biological fungicides, insecticides and bio-fertilizers built on living microbial cultures &mdash; an organic alternative to chemical inputs for modern farming.</p>
+          <p>Every product is formulated with standardized CFU counts, so growers get consistent, dependable results for disease control, pest management and soil health, batch after batch.</p>
+          <ul class="about-points">
+            <li>Organic solutions for plant growth and disease control</li>
+            <li>Eco-friendly biological control of pests, fungi and nematodes</li>
+            <li>Bio-fertilizers that fix nitrogen and unlock phosphorus &amp; potash</li>
+            <li>Promotes sustainable, long-term soil fertility</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="assets/contents/brochure-elairich.jpeg" alt="Elairich Bio Solutions brand brochure">
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products">
+      <div class="container">
+        <span class="section-tag">Our Range</span>
+        <h2 class="section-title">Products</h2>
+        <p class="section-sub">Ten liquid biological formulations covering bio-fungicides, bio-insecticides and bio-fertilizers &mdash; each available in a 1 Ltr pack.</p>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All Products</button>
+          <button class="filter-btn" data-filter="fungicide">Bio-Fungicides</button>
+          <button class="filter-btn" data-filter="insecticide">Bio-Insecticides</button>
+          <button class="filter-btn" data-filter="fertilizer">Bio-Fertilizers</button>
+        </div>
+
+        <div class="product-grid">
+
+          <!-- Planto Care -->
+          <article class="product-card" data-category="fungicide">
+            <div class="product-image">
+              <img src="assets/contents/bottle-planto-care.jpeg" alt="Planto Care bottle" loading="lazy">
+            </div>
+            <div class="product-body">
+              <span class="badge badge-fungicide">Bio-Fungicide</span>
+              <h3>Planto Care</h3>
+              <p class="product-ingredient">Pseudomonas fluorescens</p>
+              <p class="product-desc">A broad-spectrum fungicide that controls root rot, stem rot, powdery mildew, leaf blight and leaf spot. Also supports nitrogen fixation and phosphorus &amp; potash solubilization for healthier growth.</p>
+              <p class="product-spec">Min. count: 2 &times; 10&sup8; CFU/ml</p>
+              <div class="product-footer">
+                <span class="pack-size">1 Ltr</span>
+                <button class="view-label btn-link" data-name="Planto Care" data-labels="assets/contents/label-planto-care-green.jpeg,assets/contents/label-planto-care-orange.jpeg">View Label</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tricho Boost -->
+          <article class="product-card" data-category="fungicide">
+            <div class="product-image">
+              <img src="assets/contents/bottle-tricho-boost.jpeg" alt="Tricho Boost bottle" loading="lazy">
+            </div>
+            <div class="product-body">
+              <span class="badge badge-fungicide">Bio-Fungicide</span>
+              <h3>Tricho Boost</h3>
+              <p class="product-ingredient">Trichoderma viride</p>
+              <p class="product-desc">An eco-friendly soil treatment that suppresses soil-borne fungal pathogens such as Fusarium, Rhizoctonia and Pythium, while boosting soil health, plant immunity and growth.</p>
+              <p class="product-spec">Min. count: 2 &times; 10&sup8; CFU/ml</p>
+              <div class="product-footer">
+                <span class="pack-size">1 Ltr</span>
+                <button class="view-label btn-link" data-name="Tricho Boost" data-labels="assets/contents/label-tricho-boost.jpeg">View Label</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nemato Cure -->
+          <article class="product-card" data-category="fungicide">
+            <div class="product-image">
+              <img src="assets/contents/bottle-nemato-cure.jpeg" alt="Nemato Cure bottle" loading="lazy">
+            </div>
+            <div class="product-body">
+              <span class="badge badge-fungicide">Bio-Nematicide</span>
+              <h3>Nemato Cure</h3>
+              <p class="product-ingredient">Paecilomyces lilacinus</p>
+              <p class="product-desc">Targets root-knot nematodes and white grubs in the soil while promoting vigorous root development for stronger, healthier plants.</p>
+              <p class="product-spec">Min. count: 2 &times; 10&sup8; CFU/ml</p>
+              <div class="product-footer">
+                <span class="pack-size">1 Ltr</span>
+                <button class="view-label btn-link" data-name="Nemato Cure" data-labels="assets/contents/label-nemato-cure.jpeg">View Label</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Stem Guard -->
+          <article class="product-card" data-category="insecticide">
+            <div class="product-image">
+              <img src="assets/contents/bottle-stem-guard.jpeg" alt="Stem Guard bottle" loading="lazy">
+            </div>
+            <div class="product-body">
+              <span class="badge badge-insecticide">Bio-Insecticide</span>
+              <h3>Stem Guard</h3>
+              <p class="product-ingredient">Beauveria bassiana</p>
+              <p class="product-desc">Targets sucking pests like aphids, whiteflies and mealybugs, and terminates grubs and other larval pests &mdash; protecting stems and foliage naturally.</p>
+              <p class="product-spec">Min. count: 2 &times; 10&sup8; CFU/ml</p>
+              <div class="product-footer">
+                <span class="pack-size">1 Ltr</span>
+                <button class="view-label btn-link" data-name="Stem Guard" data-labels="assets/contents/label-stem-guard.jpeg">View Label</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Thripsgo -->
+          <article class="product-card" data-category="insecticide">
+            <div class="product-image">
+              <img src="assets/contents/bottle-thripsgo.jpeg" alt="Thripsgo bottle" loading="lazy">
+            </div>
+            <div class="product-body">
+              <span class="badge badge-insecticide">Bio-Insecticide</span>
+              <h3>Thripsgo</h3>
+              <p class="product-ingredient">Verticillium lecanii</p>
+              <p class="product-desc">Provides effective control over thrips, mealybugs, whiteflies and a range of aphids, while preserving beneficial insect populations in the field.</p>
+              <p class="product-spec">Min. count: 2 &times; 10&sup8; CFU/ml</p>
+              <div class="product-footer">
+                <span class="pack-size">1 Ltr</span>
+                <button class="view-label btn-link" data-name="Thripsgo" data-labels="assets/contents/label-thripsgo.jpeg">View Label</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Root Guard -->
+          <article class="product-card" data-category="insecticide">
+            <div class="product-image">
+              <img src="assets/contents/bottle-root-guard.jpeg" alt="Root Guard bottle" loading="lazy">
+            </div>
+            <div class="product-body">
+              <span class="badge badge-insecticide">Bio-Insecticide</span>
+              <h3>Root Guard</h3>
+              <p class="product-ingredient">Metarhizium anisopliae</p>
+              <p class="product-desc">Delivers long-lasting control of root grubs, beetles, weevils, termites and cutworms, and can be applied as a foliar spray to enhance plant growth.</p>
+              <p class="product-spec">Min. count: 2 &times; 10&sup8; CFU/ml</p>
+              <div class="product-footer">
+                <span class="pack-size">1 Ltr</span>
+                <button class="view-label btn-link" data-name="Root Guard" data-labels="assets/contents/label-root-guard.jpeg">View Label</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Thribhala -->
+          <article class="product-card" data-category="insecticide">
+            <div class="product-image">
+              <img src="assets/contents/bottle-thribhala.jpeg" alt="Thribhala bottle" loading="lazy">
+            </div>
+            <div class="product-body">
+              <span class="badge badge-insecticide">Bio-Insecticide</span>
+              <h3>Thribhala</h3>
+              <p class="product-ingredient">Liquid Biological Insecticide</p>
+              <p class="product-desc">A versatile foliar and soil application that protects crops from a wide range of insect pests while promoting sustainable farming practices and plant health.</p>
+              <p class="product-spec">Min. count: 3 &times; 10&sup8; CFU/ml</p>
+              <div class="product-footer">
+                <span class="pack-size">1 Ltr</span>
+                <button class="view-label btn-link" data-name="Thribhala" data-labels="assets/contents/label-thribhala.jpeg">View Label</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- N-Bacteria -->
+          <article class="product-card" data-category="fertilizer">
+            <div class="product-image">
+              <img src="assets/contents/bottle-n-bacteria.jpeg" alt="N-Bacteria bottle" loading="lazy">
+            </div>
+            <div class="product-body">
+              <span class="badge badge-fertilizer">Bio-Fertilizer</span>
+              <h3>N-Bacteria</h3>
+              <p class="product-ingredient">Acetobacter &amp; Azospirillum</p>
+              <p class="product-desc">A nitrogen-fixing bio-fertilizer that converts atmospheric nitrogen into a plant-usable form, supporting healthy growth and long-term soil fertility.</p>
+              <p class="product-spec">Min. count: 2 &times; 10&sup8; CFU/ml</p>
+              <div class="product-footer">
+                <span class="pack-size">1 Ltr</span>
+                <button class="view-label btn-link" data-name="N-Bacteria" data-labels="assets/contents/label-n-bacteria.jpeg">View Label</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Phospho Bacteria -->
+          <article class="product-card" data-category="fertilizer">
+            <div class="product-image">
+              <img src="assets/contents/bottle-phospho-bacteria.jpeg" alt="Phospho Bacteria bottle" loading="lazy">
+            </div>
+            <div class="product-body">
+              <span class="badge badge-fertilizer">Bio-Fertilizer</span>
+              <h3>Phospho Bacteria</h3>
+              <p class="product-ingredient">Phosphate Solubilising Bacteria</p>
+              <p class="product-desc">Converts insoluble soil phosphorus into a form plants can readily absorb, boosting growth and yield. Ideal for seed treatment, root dip, soil and compost application.</p>
+              <p class="product-spec">Min. count: 2 &times; 10&sup8; CFU/ml</p>
+              <div class="product-footer">
+                <span class="pack-size">1 Ltr</span>
+                <button class="view-label btn-link" data-name="Phospho Bacteria" data-labels="assets/contents/label-phospho-bacteria.jpeg">View Label</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Potash Solubilizer -->
+          <article class="product-card" data-category="fertilizer">
+            <div class="product-image">
+              <img src="assets/contents/bottle-potash-solubilizer.jpeg" alt="Potash Solubilizer bottle" loading="lazy">
+            </div>
+            <div class="product-body">
+              <span class="badge badge-fertilizer">Bio-Fertilizer</span>
+              <h3>Potash Solubilizer</h3>
+              <p class="product-ingredient">Paenibacillus mucilaginosus</p>
+              <p class="product-desc">Releases organic acids and enzymes that unlock potassium from soil minerals, improving nutrient availability and supporting sustainable agriculture.</p>
+              <p class="product-spec">Min. count: 2 &times; 10&sup8; CFU/ml</p>
+              <div class="product-footer">
+                <span class="pack-size">1 Ltr</span>
+                <button class="view-label btn-link" data-name="Potash Solubilizer" data-labels="assets/contents/label-potash-solubilizer.jpeg">View Label</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-sub">For enquiries, dealership and feedback, reach out to our registered office in Kumily, Idukki District.</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <span class="contact-icon">📍</span>
+            <h4>Address</h4>
+            <p>Elairich Bio Solutions<br>13/354, Kollampattada, Kumily<br>Idukki Dt. Kerala &ndash; 685509</p>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">📞</span>
+            <h4>Customer Care</h4>
+            <p><a href="tel:+917736194421">+91 77361 94421</a></p>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">✉️</span>
+            <h4>Email</h4>
+            <p><a href="mailto:elairichbio@gmail.com">elairichbio@gmail.com</a></p>
+          </div>
+        </div>
+
+        <p class="contact-note">For agriculture use only &middot; Shake well before use</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/logo/elairich_logo-512.png" alt="Elairich Bio Solutions logo">
+          <span>Elairich Bio Solutions</span>
+        </div>
+        <nav class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Elairich Bio Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous">&#8249;</button>
+      <img id="lightbox-img" src="" alt="">
+      <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next">&#8250;</button>
+      <p class="lightbox-name" id="lightbox-name"></p>
+      <p class="lightbox-counter" id="lightbox-counter"></p>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
